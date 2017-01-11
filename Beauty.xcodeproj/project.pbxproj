@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4545BF21E251E0E005E01B8 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4545BF11E251E0E005E01B8 /* GalleryViewController.swift */; };
 		C4E2D0AE1E10CF2900DAAE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2D0AD1E10CF2900DAAE50 /* AppDelegate.swift */; };
 		C4E2D0B01E10CF2900DAAE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2D0AF1E10CF2900DAAE50 /* ViewController.swift */; };
 		C4E2D0B31E10CF2900DAAE50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E2D0B11E10CF2900DAAE50 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		C4E2D0B81E10CF2900DAAE50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E2D0B61E10CF2900DAAE50 /* LaunchScreen.storyboard */; };
 		C4E2D0C31E10CF2900DAAE50 /* BeautyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2D0C21E10CF2900DAAE50 /* BeautyTests.swift */; };
 		C4E2D0CE1E10CF2900DAAE50 /* BeautyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2D0CD1E10CF2900DAAE50 /* BeautyUITests.swift */; };
+		C4E2D0DC1E10D48E00DAAE50 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2D0DB1E10D48E00DAAE50 /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4545BF11E251E0E005E01B8 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		C4E2D0AA1E10CF2800DAAE50 /* Beauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E2D0AD1E10CF2900DAAE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E2D0AF1E10CF2900DAAE50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		C4E2D0C91E10CF2900DAAE50 /* BeautyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E2D0CD1E10CF2900DAAE50 /* BeautyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyUITests.swift; sourceTree = "<group>"; };
 		C4E2D0CF1E10CF2900DAAE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E2D0DB1E10D48E00DAAE50 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				C4E2D0AD1E10CF2900DAAE50 /* AppDelegate.swift */,
 				C4E2D0AF1E10CF2900DAAE50 /* ViewController.swift */,
+				C4E2D0DB1E10D48E00DAAE50 /* ViewControllerExtension.swift */,
 				C4E2D0B11E10CF2900DAAE50 /* Main.storyboard */,
 				C4E2D0B41E10CF2900DAAE50 /* Assets.xcassets */,
 				C4E2D0B61E10CF2900DAAE50 /* LaunchScreen.storyboard */,
 				C4E2D0B91E10CF2900DAAE50 /* Info.plist */,
+				C4545BF11E251E0E005E01B8 /* GalleryViewController.swift */,
 			);
 			path = Beauty;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E2D0B01E10CF2900DAAE50 /* ViewController.swift in Sources */,
+				C4545BF21E251E0E005E01B8 /* GalleryViewController.swift in Sources */,
 				C4E2D0AE1E10CF2900DAAE50 /* AppDelegate.swift in Sources */,
+				C4E2D0DC1E10D48E00DAAE50 /* ViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +520,7 @@
 				C4E2D0D41E10CF2900DAAE50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4E2D0D51E10CF2900DAAE50 /* Build configuration list for PBXNativeTarget "BeautyTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +529,7 @@
 				C4E2D0D71E10CF2900DAAE50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4E2D0D81E10CF2900DAAE50 /* Build configuration list for PBXNativeTarget "BeautyUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +538,7 @@
 				C4E2D0DA1E10CF2900DAAE50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
