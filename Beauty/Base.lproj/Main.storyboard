@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="wn1-Ig-H9e">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,12 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--女神画廊-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Beauty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="女神画廊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mN4-hn-Tm4">
@@ -25,14 +25,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="选择女神" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="am1-L6-hiI">
-                                <rect key="frame" x="16" y="62" width="70" height="21"/>
+                                <rect key="frame" x="16" y="80" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" misplaced="YES" id="VcM-Me-8LF">
-                                <rect key="frame" x="0.0" y="109" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="109" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dWj-jx-pb4">
@@ -40,32 +40,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="确定"/>
                                 <connections>
-                                    <segue destination="cWG-55-b02" kind="modal" identifier="GoToGallery" id="c7l-lv-FiW"/>
+                                    <segue destination="cWG-55-b02" kind="push" identifier="GoToGallery" id="c7l-lv-FiW"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="女神画廊" id="HGK-wx-VfO"/>
                     <connections>
                         <outlet property="beautyPicker" destination="VcM-Me-8LF" id="e1v-Qm-CuT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="73.75" y="137.84666666666666"/>
+            <point key="canvasLocation" x="1247.5" y="137.5"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="1G2-MO-IJK">
             <objects>
                 <viewController id="cWG-55-b02" customClass="GalleryViewController" customModule="Beauty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dOf-Gx-Ljt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="fangbingbing" id="5tj-Cm-9TT">
-                                <rect key="frame" x="3" y="17" width="315" height="551"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EpH-DN-FI5">
                                 <rect key="frame" x="3" y="17" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,9 +71,20 @@
                                     <segue destination="mx1-rF-koR" kind="unwind" unwindAction="closeWithSegue:" id="jx0-Cj-5od"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="fanbingbing" id="5tj-Cm-9TT">
+                                <rect key="frame" x="30" y="8" width="315" height="650"/>
+                                <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hc8-vj-yxq">
+                        <barButtonItem key="rightBarButtonItem" title="分享" id="8Ou-nM-v3z">
+                            <connections>
+                                <action selector="shareTapped:" destination="cWG-55-b02" id="TJ8-yS-QKI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="beautyImage" destination="5tj-Cm-9TT" id="Mzu-W4-EXA"/>
                     </connections>
@@ -84,15 +92,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyQ-wr-GFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="mx1-rF-koR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="501" y="140"/>
+            <point key="canvasLocation" x="1674.5" y="139.5"/>
+        </scene>
+        <!--明星-->
+        <scene sceneID="vRU-4j-ZE8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tdY-BD-YQe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="明星" badgeValue="8" id="6Ua-EQ-ZZu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="78D-0I-1iv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w0o-eM-THX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lII-VI-WWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660.5" y="137.5"/>
+        </scene>
+        <!--歌手-->
+        <scene sceneID="dGW-cK-rKf">
+            <objects>
+                <viewController id="OyU-SF-icf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NdP-VC-4Dd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="wangfei" id="P6u-Vv-MHu">
+                                <rect key="frame" x="-6" y="-26" width="386" height="630"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="歌手" badgeValue="1" id="Z0R-cl-T93"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZU-nP-e84" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846.5" y="942.5"/>
+        </scene>
+        <!--演员-->
+        <scene sceneID="oJp-GL-dBS">
+            <objects>
+                <viewController id="9iS-Ni-2Jl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpk-kr-nUl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="songhuiqiao" id="gZ8-yU-bJd">
+                                <rect key="frame" x="8" y="32" width="359" height="603"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="演员" badgeValue="3" id="4h5-yL-SRj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Srj-SN-L0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1307.5" y="942.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4bG-QI-ULp">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wn1-Ig-H9e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fIL-Rz-p8P">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tdY-BD-YQe" kind="relationship" relationship="viewControllers" id="xcd-fe-rU6"/>
+                        <segue destination="OyU-SF-icf" kind="relationship" relationship="viewControllers" id="SB9-bK-vTN"/>
+                        <segue destination="9iS-Ni-2Jl" kind="relationship" relationship="viewControllers" id="dS7-nf-aA6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHf-9s-e28" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.5" y="137.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="fangbingbing" width="320" height="568"/>
+        <image name="fanbingbing" width="320" height="568"/>
+        <image name="songhuiqiao" width="320" height="568"/>
+        <image name="wangfei" width="320" height="480"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
 </document>

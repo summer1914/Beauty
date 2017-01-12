@@ -32,11 +32,11 @@ class ViewController: UIViewController {
             var imageName: String?
             switch index {
             case 0:
-                imageName = "fangbingbing"
+                imageName = "fanbingbing"
             case 1:
-                imageName = "japanese"
+                imageName = "gongli"
             case 2:
-                imageName = "korean"
+                imageName = "songhuiqiao"
             case 3:
                 imageName = "libingbing"
             case 4:
@@ -44,9 +44,9 @@ class ViewController: UIViewController {
             case 5:
                 imageName = "yangmi"
             case 6:
-                imageName = "zhouxu"
+                imageName = "zhouxun"
             default:
-                imageName = "fangbingbing"
+                imageName = "fanbingbing"
             }
             
             let vc = segue.destination as! GalleryViewController
